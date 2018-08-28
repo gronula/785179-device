@@ -10,13 +10,13 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="header-logo" href="index.html">DEVICE</a>
+        <a class="header-logo" href="index.html">Device</a>
 
         <form class="search" action="https://echo.htmlacademy.ru" method="post">
-          <label class="search-icon" for="search-field"></label>
-          <input id="search-field" type="search" name="search" placeholder="Поиск по сайту" aria-label="Поле поиска" autocomplete="off">
-          <button class="search-button invisible" type="submit">Найти</button>
-          <div class="psevdo"></div>
+          <label class="search-icon" for="search"></label>
+          <input class="search-field" id="search" type="search" name="search-field" placeholder="Поиск по сайту" aria-label="Поле поиска" autocomplete="off">
+          <button class="search-button" type="submit">Найти</button>
+          <div class="search-border"></div>
         </form>
 
         <ul class="user-navigation">
@@ -58,7 +58,7 @@
     </header>
 
     <main class="container">
-      <section class="slider-1">
+      <section class="slider">
         <img class="slider-image-1" src="img/slider-1.png" width="384" height="486" alt="Селфи-палка">
         <span class="slider-number">01</span>
         <h2>Делай селфи,
@@ -79,7 +79,7 @@
         </table>
       </section>
 
-      <section class="slider-2 invisible">
+      <section class="slider invisible">
         <img class="slider-image-2" src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
         <span class="slider-number">02</span>
         <h2>Худеем
@@ -96,7 +96,7 @@
         </table>
       </section>
 
-      <section class="slider-3 invisible">
+      <section class="slider invisible">
         <img class="slider-image-3" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
         <span class="slider-number">03</span>
         <h2>Порхает как бабочка,
@@ -116,45 +116,46 @@
       </section>
 
       <div class="slide-controls">
-        <label class="visually-hidden" for="slide1">Слайд 1</label>
         <input class="slide-toggle-button slide-toggle-button-active" id="slide1" type="radio" name="slide-button" value="Слайд 1" checked>
-        <label class="visually-hidden" for="slide2">Слайд 2</label>
+        <label class="visually-hidden" for="slide1">Слайд 1</label>
         <input class="slide-toggle-button" id="slide2" type="radio" name="slide-button" value="Слайд 2">
-        <label class="visually-hidden" for="slide3">Слайд 3</label>
+        <label class="visually-hidden" for="slide2">Слайд 2</label>
         <input class="slide-toggle-button" id="slide3" type="radio" name="slide-button" value="Слайд 3">
+        <label class="visually-hidden" for="slide3">Слайд 3</label>
       </div>
 
       <section class="category">
         <h2 class="visually-hidden">Категории товаров</h2>
-        <a class="vr" href="#">Виртуальная реальность</a>
-        <a class="selfie-monopods" href="catalog.html">Моноподы для селфи</a>
-        <a class="action-cameras" href="#">Экшн-камеры</a>
-        <a class="fitnes-bands" href="#">Фитнес-браслеты</a>
-        <a class="smartwatches" href="#">Умные часы</a>
-        <a class="quadcopters" href="#">Квадрокоптеры</a>
+				<a class="vr" href="#">Виртуальная реальность</a>
+				<a class="selfie-monopods" href="catalog.html">Моноподы для селфи</a>
+				<a class="action-cameras" href="#">Экшн-камеры</a>
+				<a class="fitnes-bands" href="#">Фитнес-браслеты</a>
+				<a class="smartwatches" href="#">Умные часы</a>
+				<a class="quadcopters" href="#">Квадрокоптеры</a>
       </section>
 
       <section class="service">
         <dl class="service-item">
-          <dt class="service-item-active">
+          <dt class="service-item-title service-item-title-active">
             <a href="#">Доставка</a>
           </dt>
-          <dd class="service-item-active">
-            <h3 class="service-header">Доставка</h3>
+          <dd class="service-item-desription service-item-desription-active">
+            <h2 class="service-header">Доставка</h2>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </dd>
-          <dt>
-            <a href="#">Гарантия</a>
+          <dt class="service-item-title">
+            <a class="link-animation" href="#">Гарантия</a>
           </dt>
-          <dd>
-            <h3 class="service-header">Гарантия</h3>
-            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам. Товар, не дом, конечно же.</p>
+          <dd class="service-item-desription nvisible">
+            <h2 class="service-header">Гарантия</h2>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам.
+						<br>Товар, не дом, конечно же.</p>
           </dd>
-          <dt>
-            <a href="#">Кредит</a>
+          <dt class="service-item-title">
+            <a class="link-animation" href="#">Кредит</a>
           </dt>
-          <dd>
-            <h3 class="service-header">Кредит</h3>
+          <dd class="service-item-desription nvisible">
+            <h2 class="service-header">Кредит</h2>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
           </dd>
         </dl>
@@ -199,9 +200,9 @@
 
     <footer class="main-footer">
       <nav class="footer-navigation">
-        <a class="header-logo" href="index.html">DEVICE</a>
+        <a class="header-logo" href="index.html">Device</a>
 
-        <ul class="user-navigation">
+        <ul class="footer-user-navigation">
           <li>
             <a class="user-navigation-login" href="#">Войти</a>
           </li>

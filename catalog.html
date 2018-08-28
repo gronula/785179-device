@@ -2,7 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Девайс</title>
+		<title>Девайс</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -10,10 +13,10 @@
         <a class="header-logo" href="index.html">DEVICE</a>
 
         <form class="search" action="https://echo.htmlacademy.ru" method="post">
-          <label class="search-icon">
-            <input class="search-field" type="search" name="search" placeholder="Поиск по сайту">
-          </label>
-          <button class="invisible" type="submit">Найти</button>
+          <label class="search-icon" for="search"></label>
+          <input class="search-field" id="search" type="search" name="search-field" placeholder="Поиск по сайту" aria-label="Поле поиска" autocomplete="off">
+          <button class="search-button" type="submit">Найти</button>
+          <div class="search-border"></div>
         </form>
 
         <ul class="user-navigation">
@@ -34,7 +37,7 @@
         <ul class="site-navigation">
           <li>
             <a class="catalog-product" href="#">Каталог товаров</a>
-            <ul class="site-navigation-catalog">
+            <ul class="site-navigation-catalog invisible">
               <li><a href="#">Виртуальная реальность</a></li>
               <li class="active"><a>Моноподы для селфи</a></li>
               <li><a href="#">Экшн-камеры</a></li>
@@ -69,7 +72,9 @@
         <h2 class="filter-header">Фильтр:</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
           <h3 class="form-header">Стоимость</h3>
-          <div class="range"></div>
+          <div class="range">
+						<div class="range-selection"></div>
+					</div>
           <p class="filter-price-value">от 0  до 5000</p>
 
           <h3 class="form-header">Цвет</h3>
@@ -77,11 +82,11 @@
           <label for="black">Черный</label>
           <input id="white" type="checkbox" name="color" value="Белый">
           <label for="white">Белый</label>
-          <input id="blue" ntype="checkbox" ame="color" value="Синий" checked>
+          <input id="blue" type="checkbox" ame="color" value="Синий" checked>
           <label for="blue">Синий</label>
-          <input id="red" natype="checkbox" me="color" value="Красный" checked>
+          <input id="red" type="checkbox" me="color" value="Красный" checked>
           <label for="red">Красный</label>
-          <input id="pink" ntype="checkbox" ame="color" value="Розовый">
+          <input id="pink" type="checkbox" ame="color" value="Розовый">
           <label for="pink">Розовый</label>
 
           <h3 class="form-header">Bluetooth</h3>
@@ -89,7 +94,7 @@
           <label for="bluetooth1">Есть</label>
           <input id="bluetooth2" type="radio" name="bluetooth" value="Нет">
           <label for="bluetooth2">Нет</label>
-          <button class="link-animation" type="submit">Показать</button>
+          <button class="" type="submit">Показать</button>
         </form>
       </section>
 
@@ -159,7 +164,7 @@
       <nav class="footer-navigation">
         <a class="header-logo" href="index.html">DEVICE</a>
 
-        <ul class="user-navigation">
+        <ul class="footer-user-navigation">
           <li>
             <a class="user-navigation-login" href="https://up.htmlacademy.ru/htmlcss/22/user/785179">Валентин Петухов</a>
           </li>
