@@ -517,16 +517,19 @@ a {
 .breadcrumbs a {
   font-size: 14px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 0.3);
+	color: rgba(0, 0, 0, 0.3);
+	cursor: default;
 }
 
-.breadcrumbs a:hover,
-.breadcrumbs a:focus {
+.breadcrumbs a:not(.active):hover,
+.breadcrumbs a:not(.active):focus {
 	color: rgba(0, 0, 0, 0.6);
+	cursor: pointer;
 }
 
-.breadcrumbs a:active {
+.breadcrumbs a:not(.active):active {
 	color: rgba(0, 0, 0, 0.1);
+	cursor: pointer;
 }
 
 .breadcrumbs a:not(:last-child)::after {
@@ -546,7 +549,7 @@ a {
 }
 
 .filter {
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: #eeeeee;
 }
 
 .filter-header {
@@ -569,39 +572,204 @@ a {
   content: "";
 
   display: block;
-	width: 201px;
-	margin-bottom: 13px;
+  width: 201px;
+  margin-bottom: 13px;
 
   border-top: 2px solid #000000;
 }
 
 .range {
-	position: relative;
-	width: 196px;
-	border-top: 2px solid #dbdbdb;
+  position: relative;
+
+  width: 196px;
+
+  border-top: 2px solid #dbdbdb;
 }
 
 .range-selection {
-	position: absolute;
-	top: -2px;
-	left: 0;
-	width: 110px;
-	height: 2px;
-	background-color: #91c92f;
+  position: absolute;
+  top: -2px;
+  left: 0;
+
+  width: 110px;
+  height: 2px;
+
+  background-color: #91c92f;
 }
 
 .filter label {
-	font-size: 14px;
-	line-height: 40px;
+  font-size: 14px;
+  line-height: 40px;
 }
 
 .filter button {
-	font-size: 14px;
-	line-height: 40px;
+  position: relative;
+  z-index: 1;
 
-	border: 0;
-	box-shadow: inset 0 7px 0 0 #efefef,  inset 0 -7px 0 0 #efefef;
-	min-width: 200px;
+  min-width: 200px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.filter button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+
+  width: 200px;
+  height: 8px;
+  margin-top: -4px;
+  margin-left: -100px;
+
+  background-color: #f0c52e;
+}
+
+.filter button:hover::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+
+  width: 220px;
+  height: 40px;
+  margin-top: -20px;
+  margin-left: -110px;
+
+  background-color: #f0c52e;
+}
+
+.filter button:active {
+  color: rgba(0, 0, 0 ,0.3);
+}
+
+.catalog-control {
+  background-color: #eeeeee;
+}
+
+.catalog-header {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.catalog-sort-item a {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans Regular", Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0;
+}
+
+.catalog-sort-item .active {
+  color: #000000;
+}
+
+.catalog-sort-item a:hover,
+.catalog-sort-item a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-sort-item a:active {
+  color: #000000;
+}
+
+.catalog-sort-item .icon {
+  color: rgba(0, 0, 0, 0.2);
+}
+.catalog-sort-item .icon-down {
+  color: #000000;
+}
+
+.catalog-sort-item .icon:hover,
+.catalog-sort-item .icon:focus {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.catalog-sort-item .icon:active {
+  color: #000000;
+}
+
+.catalog-item-header {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+}
+
+.catalog-item-price {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Gilroy Light", Arial, sans-serif;
+  color: #464646;
+}
+
+.catalog-item img:hover ~ .invisible,
+.catalog-item img:focus ~ .invisible {
+  display: block;
+}
+
+.add-compare {
+  font-size: 13px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.pagination {
+  background-color: rgba(0, 0, 0, 0.08);
+	font-size: 13px;
+	line-height: 36px;
+}
+
+.pagination a {
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.2em;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.pagination .pagination-page {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination .pagination-page.active {
+	color: #000000;
+}
+
+.pagination-back:hover,
+.pagination-back:focus,
+.pagination-next:hover,
+.pagination-next:focus {
+	background-color: rgba(0, 0, 0, 0.08);
+}
+
+.pagination-back:active,
+.pagination-next:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination .pagination-page:not(.active):hover,
+.pagination .pagination-page:not(.active):focus {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination .pagination-page:not(.active):active {
+	color: #000000;	
 }
 
 /* -----Стили футера----- */
