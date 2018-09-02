@@ -11,7 +11,7 @@
 			<a class="header-logo" href="index.html">Device</a>
 
       <nav class="main-navigation">
-        <form tabindex="0" class="search" action="https://echo.htmlacademy.ru" method="post">
+        <form class="search" action="https://echo.htmlacademy.ru" method="post">
           <label class="search-icon" for="search"></label>
           <input class="search-field" id="search" type="search" name="search-field" placeholder="Поиск по сайту" aria-label="Поле поиска" autocomplete="off">
           <button class="search-button invisible" type="submit" tabindex="0">Найти</button>
@@ -54,14 +54,14 @@
 
     <main class="container">
 			<div class="slider-wrapper">
-				<input class="slide-toggle-button slide-toggle-button-active" id="slide1" type="radio" name="slide-button" value="Слайд 1" checked>
-				<input class="slide-toggle-button" id="slide2" type="radio" name="slide-button" value="Слайд 2">
-				<input class="slide-toggle-button" id="slide3" type="radio" name="slide-button" value="Слайд 3">
+				<input class="visually-hidden slide-toggle-button-1" id="slide1" type="radio" name="slide-button" value="Слайд 1" checked>
+				<input class="visually-hidden slide-toggle-button-2" id="slide2" type="radio" name="slide-button" value="Слайд 2">
+				<input class="visually-hidden slide-toggle-button-3" id="slide3" type="radio" name="slide-button" value="Слайд 3">
 
 				<div class="slide-controls">						
-					<label class="slide-1" for="slide1" tabindex="0">Слайд 1</label>					
-					<label class="slide-2" for="slide2" tabindex="0">Слайд 2</label>					
-					<label class="slide-3" for="slide3" tabindex="0">Слайд 3</label>
+					<label class="slide-1" for="slide1">Слайд 1</label>					
+					<label class="slide-2" for="slide2">Слайд 2</label>					
+					<label class="slide-3" for="slide3">Слайд 3</label>
 				</div>
 
 				<section class="slider">
@@ -88,7 +88,7 @@
 					</div>
 				</section>
 
-				<section class="slider invisible">
+				<section class="slider">
 					<div class="slider-wrapper-image">
 						<img class="slider-image" src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
 					</div>
@@ -108,7 +108,7 @@
 					</div>
 				</section>
 
-				<section class="slider invisible">
+				<section class="slider">
 					<div class="slider-wrapper-image">
 						<img class="slider-image" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
 					</div>
@@ -213,10 +213,10 @@
 				<div class="footer-top">
 					<a class="header-logo" href="index.html">Device</a>
 
-					<nav class="footer-user-navigation">
-						<a class="user-navigation-login" href="#">Войти</a>
-						<a class="user-navigation-compare" href="#">Сравнить</a>
-						<a class="user-navigation-cart" href="#">Корзина</a>
+					<nav class="footer-navigation user-navigation">
+						<a class="footer-user-navigation-login" href="#">Войти</a>
+						<a class="footer-user-navigation-compare" href="#">Сравнить</a>
+						<a class="footer-user-navigation-cart" href="#">Корзина</a>
 					</nav>
 				</div>
 
