@@ -87,8 +87,9 @@ input[type="radio"].visually-hidden {
   border: 0;
 
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
           clip-path: inset(100%);
+
+  -webkit-clip-path: inset(100%);
 }
 
 /* -----Стили хедера----- */
@@ -158,7 +159,6 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   justify-content: space-between;
   -webkit-box-sizing: border-box;
@@ -170,6 +170,7 @@ input[type="radio"].visually-hidden {
 
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
+  -ms-flex-wrap: wrap;
 }
 
 .inner .main-navigation {
@@ -217,8 +218,8 @@ input[type="radio"].visually-hidden {
 
   background: url("../img/search.svg") no-repeat center;
   -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .search .search-field:focus {
@@ -382,8 +383,8 @@ input[type="radio"].visually-hidden {
 
   background: url("../img/user.svg") no-repeat center;
   -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .user-navigation .user-navigation-login {
@@ -404,8 +405,8 @@ input[type="radio"].visually-hidden {
 
   background: url("../img/user.svg") no-repeat center;
   -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .inner .user-navigation-login {
@@ -440,8 +441,8 @@ input[type="radio"].visually-hidden {
 
   background: url("../img/compare.svg") no-repeat center;
   -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .user-navigation .user-navigation-cart {
@@ -461,8 +462,8 @@ input[type="radio"].visually-hidden {
 
   background: url("../img/cart.svg") no-repeat center;
   -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .user-navigation a {
@@ -878,8 +879,8 @@ input[type="radio"].visually-hidden {
 
   background-color: #f0c52e;
   -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .link-animation:hover::before,
@@ -896,8 +897,8 @@ input[type="radio"].visually-hidden {
 
   background-color: #f0c52e;
   -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .link-animation:active {
@@ -944,8 +945,8 @@ input[type="radio"].visually-hidden {
 
 .slide-controls {
   position: absolute;
-  top: 327px;
   right: 83px;
+  bottom: 161px;
 
   font-size: 0;
   line-height: 0;
@@ -1599,8 +1600,8 @@ a.fitnes-bands {
   background-repeat: no-repeat;
   background-position: center;
   -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .breadcrumbs a {
@@ -1648,7 +1649,6 @@ a.fitnes-bands {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   align-items: center;
   width: 100%;
@@ -1659,6 +1659,7 @@ a.fitnes-bands {
 
   -webkit-box-align: center;
   -ms-flex-align: center;
+  -ms-flex-wrap: wrap;
 }
 
 .filter-header {
@@ -1859,8 +1860,8 @@ a.fitnes-bands {
 
   background: url("../img/checkbox-off.svg") no-repeat 0 0;
   -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   cursor: pointer;
 }
 
@@ -1915,8 +1916,8 @@ a.fitnes-bands {
 
   background: url("../img/radio-off.svg") no-repeat 0 0;
   -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   cursor: pointer;
 }
 
@@ -2137,13 +2138,13 @@ a.fitnes-bands {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   justify-content: space-between;
   width: 360px;
 
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
+  -ms-flex-wrap: wrap;
 }
 
 .catalog-item-header {
@@ -2215,8 +2216,8 @@ a.fitnes-bands {
   left: 50%;
 
   -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .catalog-item-overlay .link-animation {
@@ -2237,8 +2238,8 @@ a.fitnes-bands {
   color: rgba(0, 0, 0, 0.5);
 
   -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .add-compare:hover {
@@ -2284,7 +2285,6 @@ a.fitnes-bands {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
@@ -2302,6 +2302,7 @@ a.fitnes-bands {
   -webkit-box-pack: justify;
   -ms-flex-align: stretch;
   -ms-flex-pack: justify;
+  -ms-flex-wrap: wrap;
 }
 
 .pagination a {
@@ -2458,8 +2459,8 @@ a.fitnes-bands {
 
   background: url("../img/user-yellow.svg") no-repeat center;
   -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .footer-user-navigation-login {
@@ -2479,8 +2480,8 @@ a.fitnes-bands {
 
   background: url("../img/user-yellow.svg") no-repeat center;
   -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .inner .footer-user-navigation-login {
@@ -2559,33 +2560,35 @@ a.fitnes-bands {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 660px;
   margin: 0;
   /* margin-right: auto; */
   /* margin-left: auto; */
   padding: 0;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -ms-flex-wrap: wrap;
 }
 
 .footer-site-navigation a {
+  width: 120px;
+
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   font-family: Gilroy, Arial, sans-serif;
+  text-align: center;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  width: 120px;
- text-align: center;
 }
 
 .footer-site-navigation a:nth-child(2) {
-  margin-left: 32px;
   margin-right: 32px;
+  margin-left: 32px;
 }
 
 .footer-site-navigation a:hover,
@@ -2639,21 +2642,22 @@ a.fitnes-bands {
 
   background-color: #ffc600;
   -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .footer-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 500px;
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  -ms-flex-wrap: wrap;
 }
 
 .footer-social li {
@@ -2734,18 +2738,19 @@ a.fitnes-bands {
   left: 50%;
   z-index: 5;
 
-  display: none;
+  overflow: visible;
 
   -webkit-box-shadow: 0 10px 20px rgba(4, 6, 6 ,0.2);
-
           box-shadow: 0 10px 20px rgba(4, 6, 6 ,0.2);
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, 100vh);
+
+  transition: 0.3s;
 }
 
 .modal-show {
-  display: block;
+  transform: translate(-50%, -50%);
+
+  transition: 0.3s;
 }
 
 .feedback {
@@ -2765,6 +2770,8 @@ a.fitnes-bands {
   width: 55px;
   height: 55px;
 
+  font-size: 0;
+
   background: url("../img/modal-close.svg") no-repeat center;
   border: 0;
   cursor: pointer;
@@ -2783,8 +2790,9 @@ a.fitnes-bands {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+
+  -ms-flex-wrap: wrap;
 }
 
 .feedback-form label {

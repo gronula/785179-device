@@ -5,9 +5,11 @@ var bigMap = document.querySelector(".big-map");
 var closeFeedback = popup.querySelector(".feedback .modal-close");
 var closeBigMap = bigMap.querySelector(".big-map .modal-close");
 var serviceLink = document.querySelectorAll(".service-item-title");
+var myName = document.querySelector("#feedback-name");
 
 for (var i = 0; i < serviceLink.length; i++) {
-  serviceLink[i].addEventListener("click", function() {
+  serviceLink[i].addEventListener("click", function(evt) {
+    evt.preventDefault();
     var activeLink = document.querySelector(".service-item-title-active");
     activeLink.classList.remove("service-item-title-active");
     this.classList.add("service-item-title-active");
@@ -17,6 +19,7 @@ for (var i = 0; i < serviceLink.length; i++) {
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
+  myName.focus();
 });
 
 map.addEventListener("click", function (evt) {
