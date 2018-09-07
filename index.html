@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Девайс</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -135,14 +135,14 @@
 
       <section class="service">
         <dl class="service-item">
-          <dt class="service-item-title">
+          <dt class="service-item-title service-item-title-active">
             <a class="link-animation" href="#">Доставка</a>
           </dt>
           <dd class="service-item-desription delivery">
             <h2 class="service-header">Доставка</h2>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </dd>
-          <dt class="service-item-title service-item-title-active">
+          <dt class="service-item-title">
             <a class="link-animation" href="#">Гарантия</a>
           </dt>
           <dd class="service-item-desription warranty">
@@ -260,52 +260,6 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1536295675583" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
-  <script>
-    var link = document.querySelector(".contacts .link-animation");
-    var map = document.querySelector(".contacts img");
-    var popup = document.querySelector(".feedback");
-    var bigMap = document.querySelector(".big-map");
-    var closeFeedback = popup.querySelector(".feedback .modal-close");
-    var closeBigMap = bigMap.querySelector(".big-map .modal-close");
-    var serviceLink = document.querySelectorAll(".service-item-title");
-
-    for (var i = 0; i < serviceLink.length; i++) {
-      serviceLink[i].addEventListener("click", function() {
-        var activeLink = document.querySelector(".service-item-title-active");
-        activeLink.classList.remove("service-item-title-active");
-        this.classList.add("service-item-title-active");
-      })
-    }
-
-    link.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-show");
-    });
-
-    map.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      bigMap.classList.add("modal-show");
-    });
-
-    closeFeedback.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal-show");
-    });
-
-    closeBigMap.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      bigMap.classList.remove("modal-show");
-    });
-
-    window.addEventListener("keydown", function (evt) {
-      if (evt.keyCode === 27) {
-        evt.preventDefault();
-        if (popup.classList.contains("modal-show") || bigMap.classList.contains("modal-show")) {
-          popup.classList.remove("modal-show");
-          bigMap.classList.remove("modal-show");
-        }
-      }
-    });
-  </script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
