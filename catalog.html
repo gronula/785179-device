@@ -38,9 +38,9 @@
               <li><a href="#">Экшн-камеры</a></li>
             </ul>
           </li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li class="catalog-delivery"><a href="#">Доставка</a></li>
+          <li class="catalog-warranty"><a href="#">Гарантия</a></li>
+          <li class="catalog-contacts"><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -62,40 +62,40 @@
             <h2 class="filter-header">Фильтр:</h2>
           </div>
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-              <h3 class="form-header">Стоимость</h3>
-              <div class="range">
-                <div class="range-selection"></div>
-                <button class="range-button-left" type="button"></button>
-                <button class="range-button-right" type="button"></button>
-                <div class="price-from">
-                  от
-                  <output>0</output>
-                </div>
-                <div class="price-to">
-                  до
-                  <output>5000</output>
-                </div>
+            <h3 class="form-header">Стоимость</h3>
+            <div class="range">
+              <div class="range-selection"></div>
+              <button class="range-button-left" type="button"></button>
+              <button class="range-button-right" type="button"></button>
+              <div class="price-from">
+                от
+                <output>0</output>
               </div>
-              
-              <h3 class="form-header">Цвет</h3>
-              <input class="invisible" id="black" type="checkbox" name="color" value="Черный" checked>
-              <label for="black">Черный</label>
-              <input class="invisible" id="white" type="checkbox" name="color" value="Белый">
-              <label for="white">Белый</label>
-              <input class="invisible" id="blue" type="checkbox" name="color" value="Синий" checked>
-              <label for="blue">Синий</label>
-              <input class="invisible" id="red" type="checkbox" name="color" value="Красный" checked>
-              <label for="red">Красный</label>
-              <input class="invisible" id="pink" type="checkbox" name="color" value="Розовый">
-              <label for="pink">Розовый</label>
+              <div class="price-to">
+                до
+                <output>5000</output>
+              </div>
+            </div>
+            
+            <h3 class="form-header">Цвет</h3>
+            <input class="visually-hidden" id="black" type="checkbox" name="color" value="Черный" checked>
+            <label for="black">Черный</label>
+            <input class="visually-hidden" id="white" type="checkbox" name="color" value="Белый">
+            <label for="white">Белый</label>
+            <input class="visually-hidden" id="blue" type="checkbox" name="color" value="Синий" checked>
+            <label for="blue">Синий</label>
+            <input class="visually-hidden" id="red" type="checkbox" name="color" value="Красный" checked>
+            <label for="red">Красный</label>
+            <input class="visually-hidden" id="pink" type="checkbox" name="color" value="Розовый">
+            <label for="pink">Розовый</label>
 
-              <h3 class="form-header">Bluetooth</h3>
-              <input class="invisible" id="bluetooth1" type="radio" name="bluetooth" value="Есть" checked>
-              <label for="bluetooth1">Есть</label>
-              <input class="invisible" id="bluetooth2" type="radio" name="bluetooth" value="Нет">
-              <label for="bluetooth2">Нет</label>
+            <h3 class="form-header">Bluetooth</h3>
+            <input class="visually-hidden" id="bluetooth1" type="radio" name="bluetooth" value="Есть" checked>
+            <label for="bluetooth1">Есть</label>
+            <input class="visually-hidden" id="bluetooth2" type="radio" name="bluetooth" value="Нет">
+            <label for="bluetooth2">Нет</label>
 
-              <button class="link-animation" type="submit">Показать</button>
+            <button class="link-animation" type="submit">Показать</button>
           </form>
         </section>
 
@@ -129,7 +129,7 @@
                   <h3 class="catalog-item-header">Любительская селфи-палка</h3>
                   <span class="catalog-item-price">500 руб.</span>
                 </div>
-                </article>
+              </article>
 
               <article class="catalog-item">
                 <div class="img-wrapper">
@@ -177,7 +177,7 @@
                   <h3 class="catalog-item-header">Селфи-палка «Следуй за мной»</h3>
                   <span class="catalog-item-price">4 900 руб.</span>
                 </div>
-                </article>
+              </article>
             </section>
             
             <section class="pagination">
