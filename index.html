@@ -14,7 +14,7 @@
         <form class="search" action="https://echo.htmlacademy.ru" method="post">
           <label class="search-icon" for="search"></label>
           <input class="search-field" id="search" type="search" name="search-field" placeholder="Поиск по сайту" aria-label="Поле поиска" autocomplete="off">
-          <button class="search-button invisible" type="submit" tabindex="0">Найти</button>
+          <button class="search-button invisible" type="submit">Найти</button>
         </form>
 
         <ul class="user-navigation">
@@ -135,24 +135,26 @@
 
       <section class="service">
         <dl class="service-item">
-          <dt class="service-item-title service-item-title-active">
+          <dt class="service-item-title delivery-title service-item-title-active">
             <a class="link-animation" href="#">Доставка</a>
           </dt>
+          <dt class="service-item-title warranty-title">
+            <a class="link-animation" href="#">Гарантия</a>
+          </dt>
+          <dt class="service-item-title credit-title">
+            <a class="link-animation" href="#">Кредит</a>
+          </dt>
+
           <dd class="service-item-desription delivery">
             <h2 class="service-header">Доставка</h2>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </dd>
-          <dt class="service-item-title">
-            <a class="link-animation" href="#">Гарантия</a>
-          </dt>
           <dd class="service-item-desription warranty">
             <h2 class="service-header">Гарантия</h2>
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
             <br>Товар, не дом, конечно же.</p>
+
           </dd>
-          <dt class="service-item-title">
-            <a class="link-animation" href="#">Кредит</a>
-          </dt>
           <dd class="service-item-desription credit">
             <h2 class="service-header">Кредит</h2>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
@@ -162,18 +164,10 @@
 
       <section class="brands">
         <h2 class="visually-hidden">Бренды</h2>
-        <a href="#">
-          <img class="brands-item-image" src="img/logo-1.png" width="260" height="100" alt="DJI">
-        </a>
-        <a href="#">
-          <img class="brands-item-image" src="img/logo-2.png" width="260" height="100" alt="SPGadgets">
-        </a>
-        <a href="#">
-          <img class="brands-item-image" src="img/logo-3.png" width="260" height="100" alt="GoPro">
-        </a>
-        <a href="#">
-          <img class="brands-item-image" src="img/logo-4.png" width="260" height="100" alt="VIVE">
-        </a>
+        <a href="#"><img class="brands-item-image" src="img/logo-1.png" width="260" height="100" alt="DJI"></a>
+        <a href="#"><img class="brands-item-image" src="img/logo-2.png" width="260" height="100" alt="SPGadgets"></a>
+        <a href="#"><img class="brands-item-image" src="img/logo-3.png" width="260" height="100" alt="GoPro"></a>
+        <a href="#"><img class="brands-item-image" src="img/logo-4.png" width="260" height="100" alt="VIVE"></a>
       </section>
 
       <div class="information">
@@ -237,7 +231,7 @@
     </footer>
 
     <div class="pop-up feedback">
-      <button class="modal-close">Закрыть</button>
+      <button class="modal-close" type="button">Закрыть</button>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <label>
           Ваше имя:
@@ -256,7 +250,7 @@
     </div>
 
     <div class="pop-up big-map">
-        <button class="modal-close">Закрыть</button>
+        <button class="modal-close" type="button">Закрыть</button>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1536295675583" width="960" height="559" style="border:0" allowfullscreen></iframe>
     </div>
 
